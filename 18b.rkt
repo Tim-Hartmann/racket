@@ -3,6 +3,7 @@
 #reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 18b) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 (check-expect (mult '(2 3 4) '(7 8 9)) '(14 24 36))
 
+;; lo-number , lo-number -> lo-number
 (define mult (λ [loa1 loa2]
                (cond [(empty? loa1) loa1]
                      [else (cons (* (first loa1) (first loa2))

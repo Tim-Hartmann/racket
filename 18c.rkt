@@ -6,7 +6,6 @@
 (check-expect (merge '() '() ) '())
 (check-expect (merge '(1) '()) '(1))
 
-
 (define merge (λ [loa1 loa2]
                 (cond [(empty? loa1) loa2]
                       [(empty? loa2) loa1]
